@@ -14,6 +14,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
-      build : docker build --pull -t aspnetapp .
-      run : docker run --rm -it -p 8000:80 aspnetapp
+    - name: Build the Docker image 
+      run : docker build --pull -t aspnetapp . ,docker run --rm -it -p 8000:80 aspnetapp
