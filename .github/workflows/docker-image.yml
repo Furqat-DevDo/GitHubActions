@@ -7,12 +7,9 @@ on:
     branches: [ "dev" ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-   - name: Check out code
-    uses: actions/checkout@v2
-    run:  cd myProjectFolder docker build -t .
+   -  name: Check out code
+      uses: actions/checkout@v2
+      run:  cd myProjectFolder docker build -t .
