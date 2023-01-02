@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run:  cd myProjectFolder docker build -t .
+   - name: Check out code
+    uses: actions/checkout@v2
+    run:  cd myProjectFolder docker build -t .
